@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@font-face {
+    font-family: 'Avenir Heavy';
+    src: local('Avenir Heavy'), local('Avenir-Heavy'),
+        url('../src/fonts/Avenir-Heavy.woff2') format('woff2'),
+        url('../src/fonts/Avenir-Heavy.woff') format('woff'),
+        url('../src/fonts/Avenir-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+
+@font-face {
+	font-family: 'Conv_georgia';
+	src: url('../src/fonts/georgia.eot');
+	src: local('☺'), url('../src/fonts/georgia.woff') format('woff'), url('../src/fonts/georgia.ttf') format('truetype'), url('../src/fonts/georgia.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+button:active, button:focus {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    position: relative;
+    padding: 17px 0;
+    font-size: 20px;
+    width: 100%;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.header_container {
+    position: relative;
+    z-index: 2;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger {
+    display: none;
+}
+
+.header_logo {
+    display: inline-block;
+}
+
+.header_logo_link_img {
+    width: 80px;
+}
+
+.header_logo_link {
+    width: 80px;
+}
+
+.header_nav_list {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_nav_list_item:not(:nth-child(1)) {
+    margin-left: 72px;
+}
+
+.header_buttons {
+    display: flex;
+}
+
+.header_buttons_singin {
+    background: none;
+    border: none;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.header_buttons_trial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px 50px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.header_buttons_trial:hover {
+    background: none;
+    color: black;
+}
+
+/* Main Section */
+
+.main_content {
+    background: url("../src/img/bg_main_page.png") center center no-repeat;
+    background-size: cover;
+    padding-top: 135px;
+    padding-bottom: 336px;
+}
+
+.main_content_title {
+    font-family: 'Conv_georgia';
+    font-weight: 700;
+    font-size: 65px;
+    color: #01996D;
+    margin-bottom: 30px;
+}
+
+.main_content_text {
+    margin-bottom: 18px;
+}
+
+.main_content_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px 50px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.main_content_button:hover {
+    background: none;
+    color: black;
+}
+
+/* How it Works */
+
+.howitworks {
+    padding-top: 169px;
+    padding-bottom: 51px;
+}
+
+.howitworks_title {
+
+}
+
+.howitworks_title_disc {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.howitworks_title_content {
+    font-family: 'Conv_georgia';
+    font-size: 50px;
+    color: #01996D;
+    font-weight: 700;
+}
+
+.howitworks_content {
+    font-weight: 500;
+}
+
+.howitworks_list_item:nth-child(1) {
+    margin-top: 52px;
+}
+
+.howitworks_list_item:nth-child(2) {
+    margin-top: 339px;
+}
+
+.howitworks_list_item:nth-child(3) {
+    margin-top: 106px;
+}
+
+.howitworks_list_item_title {
+    position: relative;
+    vertical-align: baseline;
+    margin-bottom: 55px;
+}
+
+.number {
+    font-family: 'Conv_georgia';
+    font-size: 150px;
+    color: #01996D;
+    opacity: 0.2;
+}
+
+.number_big {
+    display: inline-block;
+    font-size: 180px;
+    position: absolute;
+    top: -14px;
+    left: 75px;
+}
+
+.howitworks_list_item_title_content {
+    font-family: 'Conv_georgia';
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+}
+
+.howitworks_list_item_content {
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.howitworks_list_item_img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Let's hear about... */
+.letshear {
+    background: #245852;
+    color: #ffff;
+    padding-top: 230px;
+    padding-bottom: 177px;
+}
+
+.container_costom {
+    max-width: 1300px;
+}
+.letshear_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.letshear_content_title {
+    font-family: 'Conv_georgia';
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 33px;
+}
+
+.letshear_content_text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 57px;
+}
+
+.letshear_content_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px 50px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    transition: all .2s;
+}
+
+.letshear_content_button:hover {
+    background: none;
+}
+
+.letshear_video {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* Product */
+
+.product {
+    padding-top: 120px;
+    padding-bottom: 242px;
+}
+
+.product_image {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product_image_main {
+    width: 90%;
+    object-fit:cover;
+}
+
+.product_image_aside {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    width: 40%;
+}
+
+.product_content {
+    
+}
+
+.product_content_disc {
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.product_content_title {
+    font-family: 'Conv_georgia';
+    color: #01996D;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.product_content_text {
+    margin-bottom: 40px;
+}
+
+.product_content_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px 50px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.product_content_button:hover {
+    color: #000;
+    background: none;
+}
+
+/* Footer */
+
+.footer {
+    background: #245852;
+    color: white;
+    padding-top: 95px;
+    padding-bottom: 144px;
+}
+
+.footer_title {
+    font-family: 'Avenir Heavy';
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.footer_list_item:not(:nth-child(1)) {
+    margin-top: 60px;
+}
+
+
+.footer_list_item_link {
+    color: white;
+    font-size: 25px;
+}
+
+.footer_list_item_link:hover {
+    color: white;
+}
+
+/* Adaptive */
+
+@media (max-width: 1366px) {
+    .container_costom {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header_nav_list_item:not(:nth-child(1)) {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .burger {
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+        transition: all, .3s;
+    }
+
+    .burger span {
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+    }
+
+    .burger::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        width: 30px;
+        height: 2px;
+        transition: all, .3s;
+
+    }
+
+    .burger::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        width: 30px;
+        height: 2px;
+        transition: all, .3s;
+    }
+
+    .burger.active span {
+        display: none;
+    }
+
+    .burger.active::before {
+        transform: rotate(45deg);
+        top: 20px;
+    }
+
+    .burger.active::after {
+        transform: rotate(315deg);
+        top: 20px;
+
+    }
+
+    .header.active {
+        position: fixed;
+        z-index: 100;
+    }
+
+    .header_nav {
+        position: fixed;
+        top: calc(-100% - 87px);
+        left: 0;
+        right: 0;
+        left: 0;
+        height: 100%;
+        background: #01996D;
+        margin-top: 85px;
+        transition: all .5s;
+    }
+
+    .header_nav.active {
+        top: 0;
+    }
+
+    .header_nav_list_item:not(:nth-child(1)) {
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .header_nav_list {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .header_nav_list_item_link {
+        color: white;
+    }
+
+    .howitworks_list_item:nth-child(1) {
+        margin-top: 0;
+    }
+
+    .howitworks_list_item:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .howitworks_list_item:nth-child(3) {
+        margin-top: 0;
+    }
+
+    .letshear {
+        padding-top: 100px;
+        padding-bottom: 77px;
+    }
+
+    .letshear_content {
+        text-align: center;
+    }
+
+    .letshear_content_button {
+        margin-bottom: 50px;
+    }
+
+    .letshear_video {
+        margin: 0 auto;
+    }
+
+    .product {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+
+    .product_image {
+        margin-bottom: 60px;
+    }
+
+    .product_content {
+        text-align: center;
+    }
+
+    .product_content_button{
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+@media (max-width: 768px) {}
+@media (max-width: 456px) {
+    .header_logo_link_img {
+        width: 50px;
+    }
+
+    .header_buttons_singin {
+        font-size: 16px;
+    }
+
+    .header_buttons_trial {
+        font-size: 16px;
+        padding: 13px 30px;
+    }
+
+    .main_content {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 130px;
+    }
+
+    .main_content_button {
+        margin: 0 auto;
+        font-size: 16px;
+        padding: 13px 30px;
+    }
+
+    .howitworks {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .howitworks_title {
+        text-align: center;
+    }
+
+    .howitworks_list_item {
+        position: relative;
+    }
+
+    .howitworks_list_item::after {
+        content: "";
+        position: absolute;
+        top: 4%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #01996D;
+        opacity: 0.2;
+    }
+
+    .howitworks_list_item_title {
+        margin-bottom: 0px;
+    }
+
+    .howitworks_list_item_content {
+        margin-bottom: 20px;
+    }
+
+    .letshear {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .letshear_content_title {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .letshear_content_text {
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+
+    .letshear_content_button {
+        font-size: 16px;
+        padding: 13px 30px;
+    }
+
+    .product {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
+    .product_content_disc {
+        font-size: 20px;
+    }
+
+    .product_content_title {
+        font-size: 37px;
+    }
+
+    .product_content_text {
+        font-size: 17px;
+    }
+
+    .product_content_button {
+        font-size: 16px;
+        padding: 13px 30px;
+    }
+
+    .footer {
+        padding-top: 47px;
+        padding-bottom: 70px;
+        text-align: center;
+    }
+}
+
+
+
+
+
